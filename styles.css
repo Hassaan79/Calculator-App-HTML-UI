@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 80vh;
+  margin: 0;
+}
+
+.calculator {
+  background-color: #000;
+  border-radius: 20px;
+  width: 320px;
+  padding: 20px;
+}
+
+button {
+  font-size: 1.5rem;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.calculator-keys {
+  display: grid;
+  grid-template-columns: repeat(
+    4,
+    1fr
+  ); /* just learned this repeat Function, can't figure out how to do it but thanks to some guy on redit for explaining */
+  grid-gap: 10px;
+}
+
+.calculator-screen {
+  background-color: #1c1c1c;
+  color: #fff;
+  font-size: 2.5rem;
+  text-align: right;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.number-keys {
+  background-color: #333;
+  color: #fff;
+}
+
+.operator-keys {
+  background-color: #1fafdb;
+  color: #fff;
+}
+
+.function-key {
+  background-color: #a5a5a5;
+  color: #000;
+}
+
+.zero-key-number {
+  grid-column: span 2;
+}
+
+button:active {
+  opacity: 0.7;
+}
